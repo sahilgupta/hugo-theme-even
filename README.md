@@ -25,7 +25,7 @@ $ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 
 **Important:** This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/). Modifying contents in `assets` requires the extended version to be installed.
 
-**NOTE:** For this theme, you should use **post** instead of **posts**, namely `hugo new post/some-content.md`.
+~~**NOTE:** For this theme, you should use **post** instead of **posts**, namely `hugo new post/some-content.md`.~~
 
 ## Language Support
 
