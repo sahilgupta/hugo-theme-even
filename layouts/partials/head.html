@@ -62,6 +62,8 @@
 
 <!-- Styles -->
 <!-- Inline the stylesheet -->
+<style>{{ readFile "/themes/even/static/lib/bootstrap/bootstrap-reboot.css" | safeCSS }}</style>
+
 {{ with resources.Get "sass/main.scss" | toCSS | minify }}
   <style>{{ .Content | safeCSS }}</style>
 {{ end }}
