@@ -1,10 +1,11 @@
 body {
   background: $global-background;
   border-top: 3px solid $theme-color;
+  font-family: $global-font-family
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: $global-serif-font-family;
     .anchor {
       float: left;
       line-height: 1;
