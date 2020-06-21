@@ -5,7 +5,6 @@
 .slideout-menu {
   position: fixed;
   top: 0;
-  left: 0px;
   bottom: 0;
   width: 180px;
   min-height: 100vh;
@@ -13,6 +12,14 @@
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
 }
 
 .slideout-panel {

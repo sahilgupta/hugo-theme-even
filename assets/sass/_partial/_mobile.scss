@@ -16,12 +16,12 @@
   z-index: 99;
 
   &.fixed-open {
-    transform: translate3d(180px, 0px, 0px);
+    transform: translate3d(-180px, 0px, 0px);
   }
 
   .mobile-header-logo {
     display: inline-block;
-    margin-right: 50px;
+    margin-left: 50px;
 
     .logo {
       font-size: 22px;
@@ -36,9 +36,9 @@
     width: $mobile-navbar-height;
     font-size: 24px;
     text-align: center;
-    float: left;
+    float: right;
     position: relative;
-    transition: background 0.5s;
+    transition: background;
 
     @include mobile-menu-icon();
   }

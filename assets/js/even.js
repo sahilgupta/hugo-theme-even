@@ -26,6 +26,8 @@ Even.mobileNavbar = function() {
     'menu': document.getElementById('mobile-menu'),
     'padding': 180,
     'tolerance': 70,
+    'duration': 0,
+    'side': 'right'
   });
   slideout.disableTouch();
 
