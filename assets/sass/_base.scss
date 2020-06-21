@@ -1,22 +1,36 @@
-@import '_common/normalize';
-
-html {
-  font-size: $global-font-size;
-  box-sizing: border-box;
+body {
+  background: $global-background;
+  border-top: 3px solid $theme-color;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: $global-font-family;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: $global-lineheight;
-  color: $global-font-color;
-  background: $global-background;
-  scroll-behavior: smooth;
-  border-top: 3px solid $theme-color;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    .anchor {
+      float: left;
+      line-height: 1;
+      margin-left: -20px;
+      padding-right: 4px;
+
+      &:hover {
+        border-bottom: initial;
+      }
+
+      .icon-link {
+        visibility: hidden;
+        font-size: 16px;
+        display: contents;
+
+        &:before {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &:hover {
+      .icon-link {
+        visibility: visible;
+      }
+    }
 }
 
 @include max-screen() {
@@ -30,21 +44,6 @@ body {
   color: #fff; 
 }
 
-// ::-webkit-scrollbar {
-//   width: 8px;
-//   height: 6px; 
-// }
-
-// ::-webkit-scrollbar-thumb {
-//   background: lighten($theme-color, 10%);
-//   border-radius: 5px;
-// }
-
-// ::-webkit-scrollbar-track {
-//   background: rgba(211, 211, 211, 0.4);
-//   border-radius: 5px;
-// }
-
 img {
   max-width: 100%;
   height: auto;
@@ -57,11 +56,8 @@ a {
   text-decoration: none;
 }
 
-@each $header, $size in $global-headings {
-  #{$header} {
-    font-size: $size;
-    font-family: $global-serif-font-family;
-  }
+a:hover {
+  color: $global-font-color;
 }
 
 .container {

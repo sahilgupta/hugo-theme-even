@@ -1,11 +1,9 @@
 .post-header {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 
   .post-title {
-    margin: 0;
-    font-size: $post-title-font-size;
     font-weight: $post-title-font-weight;
-    font-family: $global-serif-font-family;
+    margin-bottom: 1rem
   }
 
   .post-link {
@@ -13,12 +11,8 @@
   }
 
   .post-meta {
-    font-size: 14px;
+    font-size: 0.9rem;
     color: $post-meta-font-color;
-
-    .post-time {
-      font-size: 15px;
-    }
 
     .post-category {
       display: inline;

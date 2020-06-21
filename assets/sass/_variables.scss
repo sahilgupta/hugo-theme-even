@@ -35,12 +35,12 @@ $black: #0a0a0a !default;
 $white: #fefefe !default;
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
-$dark-gray: #8a8a8a !default;
+$dark-gray: rgba(117, 117, 117, 1) !default;
 
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+$global-font-color: #212529 !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -55,23 +55,12 @@ $global-container-padding: 0 20px !default;
 $global-lineheight: 1.5 !default;
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
 // Serif font family of the site.
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 // Background color of the site.
 $global-background: $white !default;
-
-// Headings font size of the site.
-$global-headings: (
-  h1: 26px,
-  h2: 24px,
-  h3: 20px,
-  h4: 16px,
-  h5: 14px,
-  h6: 14px
-) !default;
 
 
 // ========== Header ========== //
