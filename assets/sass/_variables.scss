@@ -92,6 +92,21 @@ $header-padding: 20px 20px !default;
   font-display: fallback;
 }
 
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('/fonts/roboto-slab/roboto-slab-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/fonts/roboto-slab/roboto-slab-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/roboto-slab/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/roboto-slab/roboto-slab-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/roboto-slab/roboto-slab-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/roboto-slab/roboto-slab-v11-latin-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
+}
+
 // Font size of the logo.
 $logo-font-size: 48px !default;
 

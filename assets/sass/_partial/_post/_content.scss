@@ -4,6 +4,9 @@
 
 .post-content {
   word-wrap: break-word;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  font-family: "Roboto Slab", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 
   @for $i from 1 through 6 {
     h#{$i} {
