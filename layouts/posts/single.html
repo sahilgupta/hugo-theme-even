@@ -50,23 +50,29 @@
         </div>
       {{- end -}}
 
-      <!-- Post Pagination -->
-      <nav class="post-nav">
-        {{ with .NextInSection -}}
-          <a class="prev" href="{{ .RelPermalink }}">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">{{ .Title }}</span>
-            <span class="prev-text nav-mobile">{{ T "prevPost" }}</span>
-          </a>
-        {{- end }}
-        {{ with .PrevInSection -}}
-          <a class="next" href="{{ .RelPermalink }}">
-            <span class="next-text nav-default">{{ .Title }}</span>
-            <span class="next-text nav-mobile">{{ T "nextPost" }}</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-        {{- end }}
-      </nav>
+      <!-- Recent Articles -->
+
+      {{ $currentPageType := .Type }}
+      {{ $recentPosts := first 5 (where .Site.RegularPages "Type" $currentPageType) }}
+      {{ if gt (len $recentPosts) 1 }}
+      <div class="recent-posts">
+          <h2>More recent posts</h2>
+          <ul>
+              {{ range $recentPosts }}
+                  {{ if ne .Title $.Title }}
+                  <li>
+                            <div class="post-meta">
+                      <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <span class="post-time"> {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} </span>
+</div>
+                      <!-- <span class="post-date"> - {{ .Date.Format "January 2, 2006" }}</span> -->
+                  </li>
+                  {{ end }}
+              {{ end }}
+          </ul>
+      </div>
+      {{ end }}
+
     </footer>
   </article>
 {{- end }}

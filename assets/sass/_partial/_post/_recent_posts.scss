@@ -1,0 +1,36 @@
+// ==============================
+// Recent Posts section
+// ==============================
+
+@import "_variables";
+
+
+.recent-posts h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.recent-posts ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recent-posts li {
+    margin-bottom: 0.5rem;
+}
+
+.recent-posts a {
+    font-size: 1.125rem;
+    transition: all 0.2s ease-in-out;
+    color: $theme-color;
+
+  &:hover {
+    font-size: 1.3rem;
+    border-bottom: $content-link-border;
+  }
+  
+  &.fancybox {
+    border: 0;
+  }
+
+}
